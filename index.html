@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAZIM HAN</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="NAZIM HAN" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="NAZIM HAN">NAZIM HAN</h1>
+
+          <p class="title">Elektronik ve Haberleşme Mühendisliği</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Detayları Göster</span>  
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:nazimhan8@gmail.com" class="contact-link">nazimhan8@gmail.com</a>
+            </div>
+
+          </li>
+          <!-- 
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 23, 1982</time>
+            </div>
+
+          </li>
+          -->
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Konum</p>
+
+              <address>Yıldız Teknik Üniversitesi, İstanbul, Türkiye</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/nzmhan/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/nzmhan" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/nzmhan/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/@nzmhan" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Hakkımda</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Özgeçmiş</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolyo</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>İletişim</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="Hakkımda">
+
+        <header>
+          <h2 class="h2 article-title">Ben Kimim</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ben, sıradanlığı reddeden, zekâmı azmimle harmanlayan, disiplinle yoğrulmuş bir mücadele ruhuyum.
+            Akademik yolculuğuma Yıldız Teknik Üniversitesi Harita Mühendisliği bölümünde başladım ve burada yalnızca öğrenen değil, üreten ve yöneten biri olmayı hedefledim. 
+            Satranç Kulübü’nün kurucu üyelerinden biri olarak başladığım öğrenci topluluklarındaki aktif rolümü yönetim kurulu sekreterliğiyle sürdürdüm ve ardından Jeoenformatik Kulübü başkanı olarak bilimsel projelere yön verdim. 
+            Akademik başarımı bölüm birinciliğiyle taçlandırarak Elektronik ve Haberleşme Mühendisliği bölümüne kurum içi yatay geçiş yaptım. 
+            Aynı zamanda, öğrenci dekanlığı bünyesinde akran danışmanı olarak görev alıyor, edindiğim bilgi ve deneyimleri paylaşarak öğrencilerin akademik ve kişisel gelişimlerine katkı sağlıyorum.
+          </p>
+
+          <p>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bilginin haritasını çizerken, toplumun ihtiyaçlarını gözetiyor; satranç tahtasında olduğu gibi hayatın karşı hamlelerini hesaplayan bir stratejist olarak ilerliyorum.
+            Akademiye olan tutkum, beni sadece derslerde değil, laboratuvarlarda ve projelerde de aktif kılıyor.
+            Benim için öğrenmek, gelişmek ve üretmek bir yaşam biçimi. Geleceği şekillendirmek, toplumun ve bilimin hizmetinde olmak için buradayım.
+            Hayallerimi gerçeğe dönüştürmek adına, sınırları aşmak ve imkânsız denileni mümkün kılmak için var gücümle çalışıyorum.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Neler Yapıyorum</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Entegrasyon</h4>
+
+                <p class="service-item-text">
+                  Öğrendiğim mühendislik bilgilerini gerçek hayat problemleriyle birleştirerek yenilikçi çözümler arıyorum.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Yazılım Geliştirme</h4>
+
+                <p class="service-item-text">
+                  Yeni algoritmalar deneyerek optimizasyon problemlerine katkıda bulunmayı hedefliyorum.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Haberleşme Teknolojileri</h4>
+
+                <p class="service-item-text">
+                  Telekomünikasyon ve sinyal işleme konularında uzmanlaşarak dijital teknolojiler için sürdürülebilir çözümler üretmeyi hedefliyorum.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Satranç</h4>
+
+                <p class="service-item-text">
+                  Boş vakitlerimi satranç oynayarak değerlendiriyorum.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Neler Yaptım</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/ai.png
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Yıldız Ai</h4>
+
+                <p class="service-item-text">
+                  Türkiye'nin yapay zeka alanındaki en büyük sosyal inisiyatifi olan Yıldız AI platformunu kurarak, yapay zeka kültürünü yaymayı ve bu alanda insanların yenilikçi bir vizyon geliştirmelerine katkıda bulundum.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/gps.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">İstikbal Haritası</h4>
+
+                <p class="service-item-text">
+                  8.000 kişinin faydalandığı amacı üniversite öğrencilerine yönelik en güncel etkinlik, staj ve burs bilgilerini sunarak onların akademik ve profesyonel gelişimlerine katkıda bulunmak olan bir platform kurdum.
+                </p>
+              </div>
+
+            </li>
+
+
+          </ul>
+
+        </section>
+
+        <!--
+          - testimonials
+        
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Başarılar</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Bölüm Birinciliği" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Bölüm Birinciliği</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+        -->
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title" style="text-align: center;"><br>Çevrenizde türevleriniz değil integralleriniz bulunsun...</h3>
+
+          <!--
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+          -->
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="Özgeçmiş">
+
+        <header>
+          <h2 class="h2 article-title">Özgeçmiş</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Eğitim</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Elektronik ve Haberleşme Mühendisliği,&nbsp;&nbsp; Yıldız Teknik Üniversitesi, &nbsp;&nbsp;İstanbul</h4>
+
+              <span>2024 — Devam Ediyor</span>
+
+              <p class="timeline-text">
+                •&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Elektromanyetik teorilerde uzmanlaşarak yeni nesil haberleşme teknolojilerine katkı sağlamayı hedefliyorum. 
+                Mezuniyet öncesinde TUSAŞ LiftUp ve TÜBİTAK 2209-B projelerine katılarak teorik bilgimi pratikle pekiştirmeyi amaçlıyorum.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Harita Mühendisliği, &nbsp;&nbsp;Yıldız Teknik Üniversitesi,&nbsp;&nbsp; İstanbul</h4>
+
+              <span>2022 — 2024</span>
+
+              <p class="timeline-text">
+                •&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hazırlık sınıfında Yabancı Diller Yüksekokulu Öğrenci Temsilciliği görevini üstlendim.
+                <br>  
+                <br>
+                •&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.42/4 GPA ortalaması ile bölüm ve fakültede birincilikle tamamlanan birinci yılın ardından Elektronik ve Haberleşme Mühendisliği bölümüne kurum içi yatay geçiş yaptım.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Nevzat Ayaz Anadolu Lisesi, &nbsp;&nbsp;Ümraniye, &nbsp;&nbsp; İstanbul</h4>
+
+              <span>2018 — 2022</span>
+
+              <p class="timeline-text">
+                Lise eğitimimi üstün akademik başarı göstererek onur öğrencisi derecesiyle tamamladım.
+              </p>
+              <br>
+              <br>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            
+            <h3 class="h3">Liderlik Deneyimi</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Yıldız Teknik Üniversitesi Jeoenformatik Kulübü<br>Kulüp Başkanı </h4>
+
+              <span>2024 — 2025</span>
+
+              <p class="timeline-text">
+                •&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Harita Mühendisliği’ni tanıtmak amacıyla 400’den fazla katılımcının yer aldığı seminerler ve atölyelere katıldım.
+                <br>
+                •&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Geomatik uygulamalarına yönelik farkındalığı artırmak için sektör profesyonelleriyle temaslar kurdum.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Yıldız Teknik Üniversitesi Öğrenci Dekanlığı<br>Akran Danışmanı</h4>
+
+              <span>2023 — Devam Ediyor</span>
+
+              <p class="timeline-text">
+                •&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Üniversite öğrencilerine akademik ve sosyal uyum süreçlerinde birebir destek ve danışmanlık sağladım.
+                <br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Yıldız Teknik Üniversitesi IPAI Araştırma Grubu<br> Katılımcı</h4>
+
+              <span>2023 — 2024</span>
+
+              <p class="timeline-text">
+                •&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Görüntü segmentasyonu ve 
+                sınıflandırma gibi temel tekniklerin yanı sıra, Convolutional Neural Networks (CNN) 
+                tabanlı model uygulamalarında veri etiketleme ve doğrulama aşamalarına destek sağladım.
+                <br>
+                •&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Grup içi projelerde Matplotlib, Numpy, Pandas, TensorFlow ve OpenCV gibi popüler 
+                kütüphanelerle ilgilendim.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Yıldız Teknik Üniversitesi Satranç Kulübü<br>Kurucu Üye / Yönetim Kurulu Sekreteri</h4>
+
+              <span>2022 — 2024</span>
+
+              <p class="timeline-text">
+                •&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kurucu üyelerden biri olarak insan kaynakları, etkinlik organizasyonu ve idari süreçleri yönettim.
+                <br>
+                •&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 200’den fazla katılımcıyla uluslararası satranç turnuvaları düzenlendim ve üye kazanım stratejileri uygulayarak üye sayısını %30 oranında arttırdım.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Yeteneklerim</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Office Programları</h5>
+                <data value="65">65%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Algoritma Bilgisi</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">İletişim Becerileri</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Takım Çalışmasına Yatkınlık</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="Portfolyo">
+
+        <header>
+          <h2 class="h2 article-title">Portfolyo</h2>
+        </header>
+
+        
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Hepsi</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Cv</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Referans Mektupları</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Sertifikalar</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Hepsi</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Cv</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Referans Mektupları</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Sertifikalar</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="cv">
+              <a href="./assets/images/cveng.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/cveng.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">özgeçmiş Dosyam (İngilizce)</h3>
+
+                <p class="project-category">Cv</p>
+
+              </a>
+            </li>
+
+            <!--
+            <li class="project-item  active" data-filter-item data-category="cv">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Özgeçmiş Dosyam (Türkçe)</h3>
+
+                <p class="project-category">Cv</p>
+
+              </a>
+            </li>
+
+            
+            <li class="project-item  active" data-filter-item data-category="referans mektupları">
+              <a href="./assets/images/referans.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/referans.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">IPAI Araştırma Grubu Referans Mektubu</h3>
+
+                <p class="project-category">Referans Mektupları</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="referans mektupları">
+              <a href="./assets/images/bölümsıralaması.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/bölümsıralaması.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Bölüm Birinciliği Belgesi</h3>
+
+                <p class="project-category">Referans Mektupları</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="referans mektupları">
+              <a href="./assets/images/ingilizceyeterlilik.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ingilizceyeterlilik.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">İngilizce Yeterlilik Belgesi</h3>
+
+                <p class="project-category">Referans Mektupları</p>
+
+              </a>
+            </li> 
+            -->
+
+
+            <li class="project-item  active" data-filter-item data-category="sertifikalar">
+              <a href="./assets/images/iha.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/iha.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">İHA 0 - İHA 1 Ticari Pilot Sertifikası </h3>
+
+                <p class="project-category">Sertifikalar</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sertifikalar">
+              <a href="./assets/images/sertifika7.png">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sertifika7.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">HKMO Yazılım Kampı Başarı Sertifikası</h3>
+
+                <p class="project-category">Sertifikalar</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sertifikalar">
+              <a href="./assets/images/sertifika6.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sertifika6.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">İTÜ Yönetim Bilimleri Kongresi</h3>
+
+                <p class="project-category">Sertifikalar</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sertifikalar">
+              <a href="./assets/images/sertifika1.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sertifika1.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Yetkin Gençler Eğitim Sertifikası</h3>
+
+                <p class="project-category">Sertifikalar</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sertifikalar">
+              <a href="./assets/images/sertifika2.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sertifika2.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Boğaziçi Üniversitesi DataCamp Veri Bilimi Zirvesi</h3>
+
+                <p class="project-category">Sertifikalar</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sertifikalar">
+              <a href="./assets/images/sertifika3.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sertifika3.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">YTÜ Siber Güvenlik Eğitimi</h3>
+
+                <p class="project-category">Sertifikalar</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sertifikalar">
+              <a href="./assets/images/sertifika.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sertifika.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Hacettepe Üniversitesi Mülakat Eğitimi</h3>
+
+                <p class="project-category">Sertifikalar</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sertifikalar">
+              <a href="./assets/images/sertifika4.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sertifika4.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Boğaziçi Ensititüsü Satranç Eğitimi</h3>
+
+                <p class="project-category">Sertifikalar</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sertifikalar">
+              <a href="./assets/images/sertifika5.png">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sertifika5.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">YTÜ Python Eğitimi</h3>
+
+                <p class="project-category">Sertifikalar</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://chat.whatsapp.com/FmAp1tXDV2kKet0IkLYDEC">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/istikbalharitası.png" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Link</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23"></time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">İstikbal Haritası Whatsapp Grupları</h3>
+
+                  <p class="blog-text">
+                    İstikbal Haritası olarak misyonumuz üniversite öğrencilerine yönelik en güncel etkinlik, staj ve burs bilgilerini sunarak onların akademik ve profesyonel gelişimlerine katkıda bulunmaktır. 
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.youtube.com/watch?v=HXVwBOiDNTE&t=169s">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/bölüm.png" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Video</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23"></time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Bölüm Tanıtımı</h3>
+
+                  <p class="blog-text">
+                    Yıldız Teknik Üniversitesi Harita Mühendisliği bölümüne ait tanıtım videomdur.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://github.com/nzmhan/Grade-Notification-Bot">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/obs.png" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Uygulama</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23"></time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">OBS Anlık Not Bildirim Botu</h3>
+
+                  <p class="blog-text">
+                    Telegram botu aracılığıyla güncellenmiş notlar varsa bildirim almak için yapılmış bir uygulamadır.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://github.com/nzmhan/wp-bot-infrastructure">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/whatsapp.png" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Uygulama</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23"></time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Yapay Zeka Destekli Whatsapp Botu</h3>
+
+                  <p class="blog-text">
+                    Whatsapp gruplarında everyone komutuyla herkesi etikletleyebilmek gibi birkaç modifikasyonu bulunan bir uygulama modelidir.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://www.youtube.com/watch?v=jcFSeE8P1VQ">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/mezuniyet.png" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category"></p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23"></time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Lise Mezuniyet Konuşmam</h3>
+
+                  <p class="blog-text">
+                    Nevzat Ayaz Anadolu Lisesi'nden mezun olurken gerçekleştirmiş olduğum konuşma.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="İletişim">
+
+        <header>
+          <h2 class="h2 article-title">İletişim</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4878.706614988719!2d28.8881!3d41.0214!3m2!1i1024!2i768!4f18!3m3!1m2!1s0x14cab645b3b18a03%3A0x8c45b04e2398f0e6!2sY%C4%B1ld%C4%B1z%20Teknik%20%C3%9Cniversitesi%20Davutpa%C5%9Fa%20Kamp%C3%BCs%C3%BC!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str
+
+              "
+              width="400" height="300" loading="speed"></iframe>
+          </figure>
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Hesaplarım</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+  
+                <a href="mailto:nazimhan8@gmail.com" class="contact-link">nazimhan8@gmail.com</a>
+                <!-- <data value="80">80%</data> -->  
+              </div>
+              <!--
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+              -->
+            </li>
+
+            <li class="skills-item">
+
+              <div class="contact-info">
+                <p class="contact-title"></p>
+  
+                <a href="mailto:nazim.han@std.yildiz.edu.tr" class="contact-link">nazim.han@std.yildiz.edu.tr</a>
+                <!-- <data value="70">70%</data> -->
+              </div>
+              <!--
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+              -->
+            </li>
+
+            <li class="skills-item">
+
+              <div class="contact-info">
+                <p class="contact-title">Linkedin</p>
+  
+                <a href="https://www.linkedin.com/in/nzmhan/" class="contact-link">https://www.linkedin.com/in/nzmhan/</a>
+                <!-- <data value="70">70%</data> -->
+              </div>
+              <!--
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+              -->
+            </li>
+
+              <li class="skills-item">
+
+                <div class="contact-info">
+                  <p class="contact-title">GitHub</p>
+    
+                  <a href="https://github.com/nzmhan" class="contact-link">https://github.com/nzmhan</a>
+                  <!-- <data value="70">70%</data> -->
+                </div>
+                <!--
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+                -->
+              </li>
+
+              <li class="skills-item">
+
+                <div class="contact-info">
+                  <p class="contact-title">İnstagram</p>
+    
+                  <a href="https://www.instagram.com/nzmhan/" class="contact-link">https://www.instagram.com/nzmhan/</a>
+                  <!-- <data value="70">70%</data> -->
+                </div>
+                <!--
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+                -->
+              </li>
+              <li class="skills-item">
+
+                <div class="contact-info">
+                  <p class="contact-title">Spotify</p>
+    
+                  <a href="https://open.spotify.com/user/21lpl2mcslmjhibzce4ivuwxq?si=cf5d32fdcaa74396" class="contact-link">https://open.spotify.com/user/21lpl2mcslmjhibzce4ivuwxq?si=cf5d32fdcaa74396</a>
+                  <!-- <data value="70">70%</data> -->
+                </div>
+                <!--
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+                -->
+              </li>
+              <li class="skills-item">
+
+                <div class="contact-info">
+                  <p class="contact-title">Youtube </p>
+    
+                  <a href="https://www.youtube.com/@nzmhan" class="contact-link">https://www.youtube.com/@nzmhan</a>
+                  <!-- <data value="70">70%</data> -->
+                </div>
+                <!--
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+                -->
+              </li>
+          </ul>
+          <br>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">İletişim Formu</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="İsim" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email " required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Mesajınız" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Mesaj Gönder (Optimizasyon güncellemesi sebebiyle iletişim formu çalışmamaktadır.)</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
