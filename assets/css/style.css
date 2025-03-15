@@ -3,12 +3,6 @@
 \*-----------------------------------*/
 
 
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
 
 
 /*-----------------------------------*\
@@ -1987,5 +1981,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-size: 18px;
   }
 }
+
+#modal-pdf-frame {
+    width: 100%;
+    height: 100vh;
+    transform: rotate(0deg); /* Dönüşü sıfırla */
+}
+
 
 
