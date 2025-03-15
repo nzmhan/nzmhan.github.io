@@ -158,3 +158,56 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modalContainer = document.querySelector("[data-modal-container]");
+  const modalOverlay = document.querySelector("[data-overlay]");
+  const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
+  const modalTitle = document.querySelector("[data-modal-title]");
+  const modalPdfFrame = document.querySelector("#modal-pdf-frame");
+  const openModalButtons = document.querySelectorAll("[data-modal-open-btn]");
+
+  // Modal açma
+  openModalButtons.forEach(button => {
+    button.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const pdfSrc = button.getAttribute("data-pdf-src");
+      const title = button.getAttribute("data-title");
+
+      modalTitle.textContent = title;
+
+      // PDF'yi önce gizle, sonra kaynağı ayarla (yeniden yükleme hatasını engellemek için)
+      modalPdfFrame.style.display = "none";
+      setTimeout(() => {
+        modalPdfFrame.src = pdfSrc;
+        modalPdfFrame.style.display = "block";
+      }, 100); // Küçük bir gecikme vererek sayfa bozulmasını engelle
+
+      modalContainer.classList.add("active");
+      modalContainer.style.display = "flex";
+
+      // Modal arka planı sıfırla (hata çıkmasını engelle)
+      setTimeout(() => {
+        modalContainer.style.background = "rgba(0, 0, 0, 0.9)";
+      }, 50);
+    });
+  });
+
+  // Modal kapatma fonksiyonu
+  function closeModal() {
+    modalContainer.classList.remove("active");
+
+    // Modal kapanırken temizleme işlemleri
+    setTimeout(() => {
+      modalContainer.style.display = "none";
+      modalContainer.style.background = "transparent"; // Renk sıfırla
+      modalPdfFrame.src = ""; // PDF kaynağını temizle
+    }, 300);
+  }
+
+  // Çarpıya ve overlay'e basınca modal'ı kapat
+  modalCloseBtn.addEventListener("click", closeModal);
+  modalOverlay.addEventListener("click", closeModal);
+});
