@@ -211,3 +211,10 @@ document.addEventListener("DOMContentLoaded", function () {
   modalCloseBtn.addEventListener("click", closeModal);
   modalOverlay.addEventListener("click", closeModal);
 });
+
+
+window.onload = function () {
+  setTimeout(() => {
+      window.scrollTo(0, 0);
+  }, 100);
+};
