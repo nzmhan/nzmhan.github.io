@@ -168,7 +168,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalPdfFrame = document.querySelector("#modal-pdf-frame");
   const openModalButtons = document.querySelectorAll("[data-modal-open-btn]");
 
-  // Modal açma
+  // Eğer öğeler eksikse hata almamak için kontrol ekleyelim
+  if (!modalContainer || !modalOverlay || !modalCloseBtn || !modalPdfFrame) {
+    console.error("Modal bileşenlerinden biri eksik! Lütfen HTML kodunu kontrol edin.");
+    return;
+  }
+
+  // Modal açma işlevi
   openModalButtons.forEach(button => {
     button.addEventListener("click", function (event) {
       event.preventDefault();
@@ -176,45 +182,45 @@ document.addEventListener("DOMContentLoaded", function () {
       const pdfSrc = button.getAttribute("data-pdf-src");
       const title = button.getAttribute("data-title");
 
-      modalTitle.textContent = title;
+      modalTitle.textContent = title || "PDF Görüntüleyici"; // Varsayılan başlık
 
-      // PDF'yi önce gizle, sonra kaynağı ayarla (yeniden yükleme hatasını engellemek için)
+      // Önce PDF'yi gizle, sonra kaynağı ayarla (yeniden yükleme hatasını engellemek için)
       modalPdfFrame.style.display = "none";
       setTimeout(() => {
         modalPdfFrame.src = pdfSrc;
         modalPdfFrame.style.display = "block";
-      }, 100); // Küçük bir gecikme vererek sayfa bozulmasını engelle
+      }, 100);
 
+      // Modalı aç
       modalContainer.classList.add("active");
       modalContainer.style.display = "flex";
 
-      // Modal arka planı sıfırla (hata çıkmasını engelle)
+      // Modal içindeki yüksekliği güncelle
       setTimeout(() => {
+        adjustIframeHeight();
         modalContainer.style.background = "rgba(0, 0, 0, 0.9)";
       }, 50);
     });
   });
 
-  // Modal kapatma fonksiyonu
+  // Modal kapatma işlevi
   function closeModal() {
     modalContainer.classList.remove("active");
-
-    // Modal kapanırken temizleme işlemleri
     setTimeout(() => {
       modalContainer.style.display = "none";
-      modalContainer.style.background = "transparent"; // Renk sıfırla
-      modalPdfFrame.src = ""; // PDF kaynağını temizle
+      modalContainer.style.background = "transparent";
+      modalPdfFrame.src = "";
     }, 300);
   }
 
   // Çarpıya ve overlay'e basınca modal'ı kapat
   modalCloseBtn.addEventListener("click", closeModal);
   modalOverlay.addEventListener("click", closeModal);
+
+  // **Sayfa Yenilendiğinde En Başa Gitme**
+  window.onload = function () {
+    setTimeout(() => {
+      window.scrollTo(0, 0); // Sayfayı en üste kaydır
+    }, 50);
+  };
 });
-
-
-window.onload = function () {
-  setTimeout(() => {
-      window.scrollTo(0, 0);
-  }, 100);
-};
