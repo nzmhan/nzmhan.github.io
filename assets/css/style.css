@@ -1889,6 +1889,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   z-index: 1000;
+  overflow: hidden !important; /* Modal içinde ekstra scroll oluşmasını önler */
 }
 
 /* Modal Açıkken Görünürlük */
@@ -1904,7 +1905,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   border-radius: 10px;
   width: 90%;
   max-width: 1000px;
-  height: 85vh;
+  height: 85vh; /* Modal yüksekliği ekranın %85'i kadar */
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1912,13 +1913,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: #ddd;
   border: none !important; /* Geçici renk değişimini engelle */
   transition: all 0.2s ease-in-out;
-}
-
-/* Modal Açılırken veya Kapanırken Yanlış Renkleri Engelle */
-.modal-container:not(.active) .pdf-modal {
-  border: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
+  overflow: hidden !important; /* Fazladan scroll çubuğunu engelle */
 }
 
 /* PDF Görüntüleyici */
@@ -1926,12 +1921,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   flex-grow: 1;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   background: #181818;
   border-radius: 8px;
+  overflow: hidden !important; /* Fazladan scroll çubuğunu tamamen engelle */
 }
 
-/* PDF'nin beyaz flaş yapmasını engelle */
+/* PDF'nin beyaz flash yapmasını engelle */
 .pdf-viewer iframe {
   width: 100%;
   height: 100%;
@@ -1941,6 +1936,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   transition: opacity 0.3s ease-in-out;
 }
 
+/* iFrame Yüklendiğinde Görünür Yap */
 .pdf-viewer iframe[src] {
   opacity: 1;
 }
@@ -1982,11 +1978,20 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 }
 
+/* Çift Scroll Sorununu Kesin Çöz */
 #modal-pdf-frame {
-    width: 100%;
-    height: 100vh;
-    transform: rotate(0deg); /* Dönüşü sıfırla */
+  width: 100%;
+  height: calc(85vh - 20px); /* Modal içine tam sığacak şekilde ayarla */
+  border: none;
+  display: block;
+  overflow: auto !important; /* Sadece iframe içinde kaydırma çubuğu olsun */
 }
 
+/* Modal Scroll Çubuğunu Kaldır */
+.modal-container::-webkit-scrollbar,
+.pdf-modal::-webkit-scrollbar,
+.pdf-viewer::-webkit-scrollbar {
+  display: none !important;
+}
 
 
